@@ -1,53 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
-    font-family: "Noto Sans", sans-serif;
-    
-    font-weight: 400;
-    font-style: normal;
 }
 
-#iconlogo{
-    height: 34px;
-}
-#logobox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
 }
 
 header {
     display: flex;
-    background-color: rgb(217, 244, 249);
-    justify-content: space-around;
     align-items: center;
-    height: 50px;
+    justify-content: space-around;
+    min-height: 50px;
+    background-color: rgb(217, 244, 249);
+}
+
+/* Logo */
+
+.logobox {
+    display: flex;
+    align-items: center;
+}
+
+.iconlogo {
+    height: 34px;
+    margin-right: 5px;
+}
+
+.logolabel {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.logolabel span {
+    color: #1DA1F2;
+    font-weight: 600;
+}
+
+/* Navigation */
+
+.buttons {
+    display: flex;
+    gap: 20px;
 }
 
 .button {
-    padding: 10px;
-    margin: 100px;
+    padding: 10px 0;
+    color: #000;
+    font-size: 15px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    
-}
-.findsection {
-    display: flex;
-    gap:10px
-}
-
-#logolabel {
-    font-weight: 600;
-}
-
-
-#logolabel span {
-    color: #1DA1F2; /* Той самий синій колір */
-    font-weight: 600;
 }
 
 .button.active {
-    color: #1DA1F2; /* Заміни на точний синій HEX з макета */
+    color: #1DA1F2;
     border-bottom: 2px solid #1DA1F2;
+}
+
+/* Search */
+
+.find-section {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    width: 350px;
+    height: 31px;
+    padding: 0 40px 0 12px;
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 18px;
+    height: 18px;
+}
+
+.city-label {
+    display: none;
 }
