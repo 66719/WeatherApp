@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+#iconlogo{
+    height: 34px;
+}
+#logobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    background-color: rgb(217, 244, 249);
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.button {
+    padding: 10px;
+    margin: 100px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+.findsection {
+    display: flex;
+    gap:10px
+}
+
+#logolabel {
+    font-weight: 600;
+}
+
+
+#logolabel span {
+    color: #1DA1F2; /* Той самий синій колір */
+    font-weight: 600;
+}
+
+.button.active {
+    color: #1DA1F2; /* Заміни на точний синій HEX з макета */
+    border-bottom: 2px solid #1DA1F2;
+}
