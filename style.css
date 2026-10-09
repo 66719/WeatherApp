@@ -65,6 +65,13 @@ header {
     gap: 10px;
 }
 
+.find-section select {
+    width: 60px;
+    border-radius: 7px;
+    border: 1.5px solid #c7c7c7;
+    padding: 5px;
+}
+
 .search-box {
     position: relative;
 }
@@ -73,6 +80,9 @@ header {
     width: 350px;
     height: 31px;
     padding: 0 40px 0 12px;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 7px;
+    
 }
 
 .search-button {
