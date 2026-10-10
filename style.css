@@ -191,3 +191,49 @@ h1 {
 .advanced-weather-parameters span {
     color: rgb(3, 164, 3);
 }
+
+
+.forecasts {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 24px;
+    
+}
+
+.forecasts h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.hourly-forecast, .seven-day-forecast {
+    background-color: rgb(255, 255, 255);
+    
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.hourly-forecast {
+    margin: 0px 0 20px 30px;
+}
+
+.seven-day-forecast {
+    margin: 0px 30px 20px 0px;
+}
+
+.days img {
+    height: 44px;
+}
+
+.days {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1.3px solid #c7c7c7 ;
+    
+}
+
+.day-date, .temp {
+    display: flex;
+    flex-direction: column;
+}
